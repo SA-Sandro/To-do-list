@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App/app";
+import App from "./App/app.js";
 
 // Selecciona el contenedor en el DOM con la clase ".root"
 const container = document.querySelector(".root");
