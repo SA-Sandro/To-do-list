@@ -1,0 +1,199 @@
+@keyframes mymove {
+    from {
+        top: 0px;
+        opacity: 0;
+    }
+
+    to {
+        top: 200px;
+        opacity: 1
+    }
+}
+
+.root {
+    height: 100vh;
+    background-repeat: repeat-y;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/img/main_background.jpg);
+}
+
+.main_ {
+    max-width: 700px;
+}
+
+.div_main {
+    position: relative;
+    max-width: 800px;
+}
+
+.main__h3 {
+    color: #373530;
+    font-weight: bold;
+    font-family: "Finlandica", sans-serif;
+}
+
+/*Settings*/
+
+.div__span_settings a span i {
+    color: gray;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.div__span_settings {
+    position: absolute;
+    left: 90%;
+    top: 15px;
+}
+
+/*newTask Component*/
+.div_input {
+    min-width: 300px;
+    padding: 5px;
+}
+
+.div_radios__h4 {
+    color: #373530;
+    font-weight: bold;
+    font-family: "Finlandica", sans-serif;
+}
+
+.div_radios {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    animation: mymove 0.5s ease-out forwards;
+
+}
+
+.showWishes__div {
+    position: relative;
+}
+
+/*showWishes Component*/
+
+.div_showWishes {
+    word-break: break-all;
+    width: 100%;
+}
+
+.showWishes_h5 {
+    color: #373530;
+    font-family: "Finlandica", sans-serif;
+    font-size: 1rem;
+}
+
+.showWish__input input {
+    width: 20px;
+    height: 20px;
+}
+
+.showWishes_ul li p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.showWishes_ul {
+    max-width: 500px;
+}
+
+.white-text {
+    color: white;
+}
+
+.red-text {
+    color: red;
+}
+
+.orange-text {
+    color: orange;
+}
+
+/*History Component*/
+.div_history {
+    word-break: break-all;
+}
+
+.div_history ul {
+    text-align: left;
+}
+
+.settings_title {
+    color: #373530;
+    padding: 5px;
+    font-family: "Finlandica", sans-serif;
+    font-size: 1.5rem;
+}
+
+.div_history ul li {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.div_history ul li i {
+    font-size: 1.5rem;
+    color: rgb(98, 208, 98);
+}
+
+.div_button {
+    margin-left: 10px;
+}
+
+.div_history_task_p {
+    color: rgb(169, 168, 168);
+}
+
+.div_width {
+    transform: none;
+    min-width: 100%;
+    transform: translate3d(20.5px, 39.5px, 0px);
+}
+
+
+@media (max-width:860px) {
+
+    .div_input {
+        min-width: 250px;
+    }
+
+}
+
+@media (max-width:560px) {
+    .div_write {
+        flex-direction: column;
+    }
+
+    .div_input {
+        margin-bottom: 10px;
+        min-width: 400px;
+    }
+
+    .div_button {
+        margin: auto;
+        width: min-content;
+    }
+
+    .div_main {
+        position: relative;
+        max-width: 500px;
+    }
+
+}
+
+@media (max-width:560px) {
+
+    .div_input {
+        margin-bottom: 10px;
+        min-width: 200px;
+    }
+
+    .div__span_settings {
+        left: 85%;
+        top: 12px;
+    }
+}
