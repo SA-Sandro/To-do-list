@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "description": "task_manager_app",
+<<<<<<< HEAD
+  "type":"module",
+=======
+  "type": "module",
+>>>>>>> 10689deccf082a0859063bb32422d00399591d4a
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
